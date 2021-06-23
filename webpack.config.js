@@ -31,19 +31,12 @@ const config = {
                   },]
             },
             {
-                test: /\.css$/,
-                use: [
-                    'style-loader',
-                    'css-loader'
-                ]
+                test: /\.css$/i,
+                use: [MiniCssExtractPlugin.loader, 'css-loader'],
             },
             {
                 test: /\.scss$/,
-                use: [
-                    'style-loader',
-                    'css-loader',
-                    'sass-loader'
-                ]
+                use: ['style-loader', 'css-loader', 'sass-loader'],
             },
             {
                 test: /\.svg$/,
@@ -61,10 +54,7 @@ const config = {
             title: 'React Webpack Boilerplate',
             template: path.resolve(__dirname, './template/index.html')
         }),
-        new MiniCssExtractPlugin({
-            filename: '[name].bundle.css',
-            chunkFilename: '[id].css'
-          })
+        new MiniCssExtractPlugin()
     ]
 }
 
