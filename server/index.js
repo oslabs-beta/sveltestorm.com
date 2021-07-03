@@ -1,6 +1,4 @@
-// note: server is needed only to statically serve the files created by webpack
-
-const express = require("express");
+// note: server is needed only to statically serve the files created by webpackconst express = require("express");
 const PORT = process.env.PORT || 3000; 
 const path = require('path');
 
