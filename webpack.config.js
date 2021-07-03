@@ -4,12 +4,15 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 const config = {
-    entry: './client/index.js',
+    entry: './src/index.js',
     output: {
         path: path.resolve(process.cwd(), 'dist'),
         filename: 'bundle.js'
     },
     devtool: 'source-map',
+    resolve: {
+        extensions: ['*', '.js', '.jsx'],
+    },
     module: {
         rules: [
             // out of the box, webpack only understands JavaScript files

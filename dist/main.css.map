@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://sveltestorm.com/./src/App.css"],"names":[],"mappings":"AAAA;EACE,sBAAsB;EACtB,SAAS;EACT,UAAU;EACV;YACU;AACZ,C","file":"main.css","sourcesContent":["*{\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n  font-family: 'Encode Sans Expanded',\n  sans-serif;\n}"],"sourceRoot":""}
