@@ -1,61 +1,57 @@
 const path = require('path');
-const HTMLWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-
+console.log(__dirname)
 const config = {
-    entry: './client/index.js',
+    context: __dirname,
+    entry: path.resolve(__dirname, "./src/index.js"),
     output: {
-        path: path.resolve(process.cwd(), 'dist'),
-        filename: 'bundle.js'
+      path: path.resolve(process.cwd(), "dist"),
+      filename: "bundle.js",
     },
-    devtool: 'source-map',
+    mode: 'development',
+    devServer: {
+      publicPath: '/dist',
+      proxy: {
+        '/': 'http://localhost:3000/',
+      },
+    },
     module: {
-        rules: [
-            // out of the box, webpack only understands JavaScript files
-            // a loader converts the file to a valid module
-            // loaders enable you to use all kinds of file types
-            {
-                test: /\.(js|jsx)$/,
-                exclude: /node_modules/,
-                use: [{
-                    loader: 'babel-loader',
-                    options: {
-                      presets: [
-                        ['@babel/preset-env', {
-                          "targets": "defaults" 
-                        }],
-                        '@babel/preset-react'
-                      ]
-                    }
-                  },]
-            },
-            {
-                test: /\.css$/i,
-                use: [MiniCssExtractPlugin.loader, 'css-loader'],
-            },
-            {
-                test: /\.scss$/,
-                use: ['style-loader', 'css-loader', 'sass-loader'],
-            },
-            {
-                test: /\.svg$/,
-                loader: 'url-loader',
-            },
-            {
-                test: /\.(png|jpe?g|gif)$/i,
-                loader: 'file-loader',
+      rules: [
+        {
+        test: /\.jsx?$/,
+        exclude: /(node_modules)/,
+          use: {
+            loader: 'babel-loader',
+            options: {
+              presets: ['@babel/preset-env', '@babel/preset-react'],
+              plugins: ['@babel/plugin-proposal-object-rest-spread', "@babel/plugin-transform-runtime"],
+              cacheDirectory: true
             }
-        ]
+          }
+        },
+        {
+          test: /.css$/,
+          exclude: /node_modules/,
+          use: ['style-loader', 'css-loader'],
+        },
+        {
+          test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2|mov)$/,
+          loader: 'url-loader',
+          options: {
+            limit: 10000
+          }
+        },
+        {
+          test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, 
+          loader: 'file-loader'
+        },
+      ],
     },
-    plugins: [
-        new CleanWebpackPlugin(),
-        new HTMLWebpackPlugin({
-            title: 'React Webpack Boilerplate',
-            template: path.resolve(__dirname, './template/index.html')
-        }),
-        new MiniCssExtractPlugin()
-    ]
-}
+    resolve: {
+      extensions: ['*', '.js', '.jsx'],
+    },
+    node: {
+      global: true,
+    }
+  }
 
 module.exports = config;
