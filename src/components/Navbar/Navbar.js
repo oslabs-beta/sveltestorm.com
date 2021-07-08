@@ -24,19 +24,19 @@ const Navbar = ({ toggleMenu }) => {
         <>
         <Nav>
             <NavbarContainer>
-             <NavLogo to='hero'> Svelte Storm</NavLogo>
+             <NavLogo to='hero' spy={true} smooth={true} offset={-80} duration={500}> Svelte Storm</NavLogo>
              <MobileIcon onClick={toggleMenu}>
                  <FaBars size='1.3em'/>
              </MobileIcon>
              <NavMenu>
                  <NavItem>
-                     <NavLinks to='about'> About </NavLinks>
+                     <NavLinks to='about' spy={true} smooth={true} offset={0} duration={500}> About </NavLinks>
                  </NavItem>
                  <NavItem>
-                     <NavLinks to='meet'> Meet the Team </NavLinks>
+                     <NavLinks to='meet' spy={true} smooth={true} offset={0} duration={500}> Meet the Team </NavLinks>
                  </NavItem>
                  <NavItem>
-                     <NavLinks to='download'> Download </NavLinks>
+                     <NavLinks to='download' spy={true} smooth={true} offset={0} duration={500}> Download </NavLinks>
                  </NavItem>
                  {/* <NavItem>
                      <NavLinks to='signup'> Sign Up </NavLinks>

@@ -28,6 +28,10 @@ const onHover = () => {
                      onMouseLeave={onHover} 
                      primary='true'
                      dark='true' 
+                     spy={true} 
+                     smooth={true} 
+                     offset={0} 
+                     duration={500}
                     >
                         Download {hover ? <ArrowForward /> : <ArrowRight />}
                     </Button>
