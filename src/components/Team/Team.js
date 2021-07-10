@@ -3,6 +3,7 @@ import {AiFillGithub, AiFillLinkedin} from 'react-icons/ai';
 import { IoPersonCircleSharp } from 'react-icons/io5';
 import { IconContext } from "react-icons";
 import { TeamContainer, Header, GroupContainer, TeamWrapper, Img, LinkWrapper, Linkedin, Git, Name } from './TeamElements';
+import Aye from '../../images/Contributers/Aye.png';
 
 const Team = () => {
     return (
@@ -14,7 +15,7 @@ const Team = () => {
             <GroupContainer>
                 <TeamWrapper>
                     <Img />
-                    <IoPersonCircleSharp size='15em'/>
+                    <IoPersonCircleSharp size='50%'/>
                     <Name>
                         Arron Nestor
                     </Name>
@@ -26,7 +27,7 @@ const Team = () => {
 
                 <TeamWrapper>
                     <Img />
-                    <IoPersonCircleSharp size='15em'/>
+                    <IoPersonCircleSharp size='50%'/>
                     <Name>
                         Frank Iforgot
                     </Name>
@@ -38,7 +39,7 @@ const Team = () => {
 
                 <TeamWrapper>
                     <Img />
-                    <IoPersonCircleSharp size='15em'/>
+                    <IoPersonCircleSharp size='50%'/>
                     <Name>
                         Kevin Sarchi
                     </Name>
@@ -50,7 +51,7 @@ const Team = () => {
 
                 <TeamWrapper>
                     <Img />
-                    <IoPersonCircleSharp size='15em'/>
+                    <IoPersonCircleSharp size='50%'/>
                     <Name>
                         Aye Moe
                     </Name>
@@ -62,9 +63,21 @@ const Team = () => {
 
                 <TeamWrapper>
                     <Img />
-                    <IoPersonCircleSharp size='15em'/>
+                    <IoPersonCircleSharp size='100rem'/>
                     <Name>
                         Sam Filip
+                    </Name>
+                    <LinkWrapper>
+                    <AiFillGithub />
+                    <AiFillLinkedin />
+                    </LinkWrapper>
+                </TeamWrapper>
+
+                <TeamWrapper>
+                    <Img src={Aye}/>
+
+                    <Name>
+                        TEST
                     </Name>
                     <LinkWrapper>
                     <AiFillGithub />

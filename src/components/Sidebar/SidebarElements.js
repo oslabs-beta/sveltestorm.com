@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import {FaTimes} from 'react-icons/fa';
 import { Link as LinkRouter } from 'react-router-dom';
-import { Link as LinkScroll } from 'react-scroll'
+import { Link as LinkScroll } from 'react-scroll';
+
 
 
 export const SidebarContainer = styled.aside`
@@ -23,7 +24,7 @@ top:${({ isOpen }) => (isOpen ? '0' : '100%')};
 `;
 
 export const CloseIcon = styled(FaTimes) `
-color: #fff;
+color: #ff3c00;
 `;
 
 export const Icon = styled.div`
@@ -41,6 +42,7 @@ color: #fff;
 `;
 
 export const SidebarMenu = styled.ul`
+/* border:2px solid yellow; */
 display: grid;
 grid-template-columns: 1fr;
 grid-template-rows: repeat(6, 80px);
@@ -93,3 +95,27 @@ text-decoration: none;
     color: #010606;
 }
 `;
+
+export const Anchor = styled.a`
+/* border:2px solid red; */
+display: flex;
+align-items: center;
+justify-content: center;
+font: 100.5rem;
+text-decoration: none;
+list-style: none;
+transition: 0.2s ease-in-out;
+text-decoration: none;
+color: #444;
+cursor:pointer;
+
+&:hover {
+    color:#01bf71;
+    transition: 0.2 ease-in-out;
+}
+`
+export const SSLogo = styled.img`
+margin: auto;
+max-width: 3rem;
+
+`
