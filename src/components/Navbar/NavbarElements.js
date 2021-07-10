@@ -91,7 +91,7 @@ cursor: pointer;
 }
 /* highlights under nav links */
 &.active {
-    border-bottom: 3px solid orange;
+    border-bottom: 3px solid #ff3c00;
 }
 `;
 

@@ -4,7 +4,6 @@ import Coding from '../../images/Coding.svg';
 const About2 = () => {
     return (
         <About2Container >
-            <Img src={Coding} alt='sveltestorm ide'/>
             <DescriptionContainer>
                 <Header>
                     Heading 
@@ -15,6 +14,7 @@ const About2 = () => {
                 ut labore et dolore magna aliqua.
                 </Description>
             </DescriptionContainer>
+            <Img src={Coding} alt='sveltestorm ide'/>
         </About2Container>
     )
 }

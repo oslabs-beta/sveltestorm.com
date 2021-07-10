@@ -7,9 +7,11 @@ import {
     SidebarMenu,
     SidebarLink,
     SideBtnWrap,
-    SidebarRoute
-
+    SidebarRoute,
+    Anchor,
+    SSLogo
 } from './SidebarElements';
+import logo from '../../images/SvelteStormLogo/logo.svg'
 
 const Sidebar = ({toggleMenu, isOpen}) => {
     return (
@@ -22,8 +24,9 @@ const Sidebar = ({toggleMenu, isOpen}) => {
                     <SidebarLink to='about' onClick={toggleMenu} spy={true} smooth={true} offset={0} duration={500}> About </SidebarLink>
                     <SidebarLink to='meet' onClick={toggleMenu} spy={true} smooth={true} offset={0} duration={500}> Meet the Team </SidebarLink>
                     <SidebarLink to='download' onClick={toggleMenu} spy={true} smooth={true} offset={0} duration={500}> Download </SidebarLink>
-                    <SidebarLink to='download' onClick={toggleMenu} spy={true} smooth={true} offset={0} duration={500}> Github </SidebarLink>
+                    <Anchor href="https://github.com/oslabs-beta/SvelteStorm" target="_blank" rel="noopener noreferrer"> Github </Anchor>
                     <SidebarLink to='download' onClick={toggleMenu} spy={true} smooth={true} offset={0} duration={500}> Medium </SidebarLink>
+                    <SSLogo src={logo}/>
                 </SidebarMenu>
                 {/* <SideBtnWrap>
                    <SidebarRoute to='/signin'>Sign In</SidebarRoute>

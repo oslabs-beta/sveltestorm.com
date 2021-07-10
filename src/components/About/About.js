@@ -8,10 +8,10 @@ const About = () => {
         <IconContext.Provider value={{ color: "orange", size: '5em' }}>
         <AboutContainer id='about' >
             <Header>
-                What is SvelteStorm
+                What is Svelte Storm?
             </Header>
             <Description>
-            description description description description 
+            WHY WONT YOU CENTER description description description 
             description description description description 
             description description description description 
             description description description description

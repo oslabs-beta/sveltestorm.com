@@ -7,6 +7,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 border: solid green;
+overflow-x: hidden;
 
 @media screen and (max-width: 768px) {
     padding:  100px 0;
@@ -22,6 +23,13 @@ border: solid red;
 display: flex;
 justify-content: space-evenly;
 align-items: center;
+
+@media screen and (max-width: 768px) {
+    margin: 10px;
+    padding:  100px 0;
+    display: grid;
+    grid-template-columns: 200px 200px;
+}
 `
 
 export const TeamWrapper = styled.div`
@@ -30,10 +38,13 @@ display: flex;
 flex-direction: column;
 align-items: center;
 margin: 10px;
+min-width: 200px;
+max-height: 250px;
 `
 
 export const Img = styled.img`
-
+height: 10rem;
+border-radius: 50%;
 `
 
 export const Name = styled.p`
