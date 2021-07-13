@@ -43,7 +43,6 @@ const Navbar = ({ toggleMenu }) => {
                  </NavItem> */}
              </NavMenu>
              <NavBtn>
-                 {/* <NavBtnLink to='/signin'> Sign In </NavBtnLink> */}
                  <a href="https://github.com/oslabs-beta/sveltestorm.com" target="_blank" rel="noopener noreferrer">
                  <AiFillGithub/>
                  </a>
