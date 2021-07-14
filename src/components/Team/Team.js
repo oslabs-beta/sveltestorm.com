@@ -37,9 +37,9 @@ const Team = () => {
                                     <Anchor href={el.git} target="_blank" rel="noopener noreferrer">
                                         <AiFillGithub/>
                                     </Anchor>
-                                    <a href={el.linkedin} target="_blank" rel="noopener noreferrer">
+                                    <Anchor href={el.linkedin} target="_blank" rel="noopener noreferrer">
                                         <AiFillLinkedin/>
-                                    </a>
+                                    </Anchor>
                                 </LinkWrapper>
                       </TeamWrapper>
             })    

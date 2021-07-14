@@ -46,7 +46,7 @@ width: 100%;
 height: 100%;
 color: #ff3c00;
 display: flex;
-font-size: 50rem;
+font-size: 40rem;
 justify-content: flex-end;
 align-items: flex-start;
 position: relative;
