@@ -8,7 +8,8 @@ justify-content: center;
 align-items: center;
 /* border: solid green; */
 overflow-x: hidden;
-
+background-color: #666778;
+color: white;
 @media screen and (max-width: 768px) {
     padding:  100px 0;
 }
@@ -65,5 +66,11 @@ export const Git = styled.div`
 
 `
 export const Anchor = styled.a `
+
+
+&:hover{
+    transition: all 0.2s ease-in-out;
+font-size: 1.2em;
+}
 
 `

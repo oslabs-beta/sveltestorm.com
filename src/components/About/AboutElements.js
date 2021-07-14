@@ -7,6 +7,10 @@ flex-direction: column;
 justify-content: space-evenly;
 align-items: center;
 background-color: #666778;
+color: white;
+border: solid red;
+padding-top: 3em;
+padding-bottom: 3em;
 
 @media screen and (max-width: 768px) {
     padding:  100px 0;
@@ -16,11 +20,12 @@ background-color: #666778;
 export const Header = styled.h1`
 margin: 20px;
 `
-export const Description = styled.h3`
+export const Description = styled.p`
 border: 2px solid red;
 max-width: 80%;
 display: flex;
 justify-self: center;
+/* font-weight: lighter; */
 
 @media screen and (max-width: 768px) {
     padding:  50px 0;
