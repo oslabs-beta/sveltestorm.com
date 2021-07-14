@@ -1,7 +1,9 @@
 import React, {useState} from 'react';
-import Svelte from '../../images/svelte_js.png';
-import { HeroContainer, HeroBg, ImageBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight} from './HeroElements';
+import SvelteStorm from '../../images/SvelteStormLogo/logo.svg';
+import { HeroContainer, HeroBg, IconBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight} from './HeroElements';
 import {Button} from '../ButtonElements';
+import { IconContext } from "react-icons";
+import { AiOutlineThunderbolt } from "react-icons/ai";
 
 const Hero = () => {
 const [hover, setHover] = useState(false);
@@ -11,10 +13,12 @@ const onHover = () => {
 };
 
     return (
-        
+        <IconContext.Provider value={{ border:"1px solid black"}}>
         <HeroContainer id='hero'>
             <HeroBg>
-                {/* <ImageBg src={Svelte} alt='svelte' type='image' /> */}
+                <IconBg>
+                    <AiOutlineThunderbolt/>
+                </IconBg>
             </HeroBg>
             <HeroContent>
                 <HeroH1> SVELTE STORM MOTHAFUCKAS</HeroH1>
@@ -38,6 +42,7 @@ const onHover = () => {
                 </HeroBtnWrapper>
             </HeroContent>
         </HeroContainer>
+        </IconContext.Provider>
     )
 }
 

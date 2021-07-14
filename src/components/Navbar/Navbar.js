@@ -3,6 +3,7 @@ import React from 'react'
 import { FaBars } from 'react-icons/fa';
 import {AiFillGithub} from 'react-icons/ai';
 import { IconContext } from "react-icons";
+import SvelteStorm from "../../images/SvelteStormLogo/logo.svg";
 import { 
     Nav, 
     NavbarContainer, 
@@ -12,7 +13,8 @@ import {
     NavItem, 
     NavLinks,
     NavBtn,
-    NavBtnLink
+    LogoContainer,
+    SSLogo
 } from './NavbarElements';
 
 const Navbar = ({ toggleMenu }) => {
@@ -20,13 +22,16 @@ const Navbar = ({ toggleMenu }) => {
 
 
     return (
-        <IconContext.Provider value={{ color: "#ff3c00", size: '3em' }}>
+        <IconContext.Provider value={{ color: "#ff3c00", size: '2.5rem' }}>
         <>
         <Nav>
             <NavbarContainer>
+                <LogoContainer>
+                <SSLogo src={SvelteStorm} />
              <NavLogo to='hero' spy={true} smooth={true} offset={-80} duration={500}> Svelte Storm</NavLogo>
+             </LogoContainer>
              <MobileIcon onClick={toggleMenu}>
-                 <FaBars size='1.3em'/>
+                 <FaBars />
              </MobileIcon>
              <NavMenu>
                  <NavItem>

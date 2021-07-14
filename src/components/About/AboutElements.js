@@ -6,11 +6,10 @@ display: flex;
 flex-direction: column;
 justify-content: space-evenly;
 align-items: center;
+background-color: #666778;
 
 @media screen and (max-width: 768px) {
     padding:  100px 0;
-    /* background-color: #ff3c00; */
-    /* color:white; */
 }
 `
 
@@ -25,8 +24,6 @@ justify-self: center;
 
 @media screen and (max-width: 768px) {
     padding:  50px 0;
-    /* background-color: #ff3c00; */
-    /* color:white; */
     width: 80%;
 }
 

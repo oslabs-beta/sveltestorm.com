@@ -31,17 +31,28 @@ z-index: 1;
 width: 100%;
 padding: 0 24px;
 max-width: 1700px;
-/* border: solid red; */
 `;
 
+export const LogoContainer = styled.div`
+display: flex;
+align-items: center;
+justify-content: space-around;
+`
+export const SSLogo = styled.img`
+height: 1.5rem;
+margin-right: 8px;
+align-self: flex-end;
+margin-bottom: 26px;
+`
+
 export const NavLogo = styled(LinkScroll)`
-color: #3d3d3d;
+color: #444;
 justify-self: flex-start;
 cursor: pointer;
 font-size: 1.5rem;
 display: flex;
 align-items: center;
-margin-left: 24px;
+/* margin-left: 24px; */
 font-weight: bold;
 text-decoration: none;
 `;
