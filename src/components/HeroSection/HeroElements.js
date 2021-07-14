@@ -41,13 +41,23 @@ height: 100%;
 overflow: hidden;
 `
 
-export const ImageBg = styled.img`
+export const IconBg = styled.div`
 width: 100%;
 height: 100%;
-/* -o-object-fit: cover; */
-/* object-fit:cover; */
-background: white;
+color: #ff3c00;
+display: flex;
+font-size: 50rem;
+justify-content: flex-end;
+align-items: flex-start;
+position: relative;
+top: -150px;
+right: -100px;
+
+
+
+
 /* border: 2px solid red; */
+z-index: 1;
 `;
 
 export const HeroContent = styled.div`
