@@ -7,11 +7,11 @@ const app = express();
 
 app.use(express.urlencoded({ extended: true }));
 
-app.use(express.static(__dirname + "./dist/bundle"));
+app.use('/', express.static(path.resolve(DIST_PATH)));
 
-app.use('/', (req, res) => {
-    res.status(200).sendFile(path.resolve(__dirname, '../index.html'))
-  });
+// app.use('/', (req, res) => {
+//     res.status(200).sendFile(path.resolve(__dirname, '../index.html'))
+//   });
 
 app.listen(PORT, () => {
     console.log(`server is listening on PORT ${PORT}`);

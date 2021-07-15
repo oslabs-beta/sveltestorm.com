@@ -1,19 +1,22 @@
 const path = require('path');
+// const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 const config = {
     context: __dirname,
-    entry: path.resolve(__dirname, "./src/index.js"),
+    entry: './src/index.js',
     output: {
       path: path.resolve(process.cwd(), "dist"),
       filename: "bundle.js",
+      publicPath: '/'
     },
-    mode: 'development',
-    devServer: {
-      publicPath: '/dist',
-      proxy: {
-        '/': 'http://localhost:3000/',
-      },
-    },
+    // mode: 'production',
+    // devServer: {
+    //   publicPath: '/dist',
+    //   proxy: {
+    //     '/': 'http://localhost:3000/',
+    //   },
+    // },
     module: {
       rules: [
         {
@@ -46,12 +49,18 @@ const config = {
         },
       ],
     },
+    // plugins: [
+    //   new HtmlWebpackPlugin({
+    //     template: path.resolve(__dirname, 'dist/index.html'),
+    //     title: 'Production',
+    //   }),
+    //   new CopyWebpackPlugin({
+    //     patterns: [{ from: path.resolve(__dirname, 'src/images'), to: 'src/images' }]
+    //   })
+    // ],
     resolve: {
       extensions: ['*', '.js', '.jsx'],
     },
-    node: {
-      global: true,
-    }
   }
 
 module.exports = config;
