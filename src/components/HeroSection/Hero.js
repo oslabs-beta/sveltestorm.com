@@ -21,7 +21,7 @@ const onHover = () => {
                 </IconBg>
             </HeroBg>
             <HeroContent>
-                <HeroH1> SVELTE STORM MOTHAFUCKAS</HeroH1>
+                <HeroH1>SVELTE STORM</HeroH1>
                 <HeroP>
                     Download the best IDE NOW!!!
                 </HeroP>

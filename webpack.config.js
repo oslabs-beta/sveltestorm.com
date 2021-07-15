@@ -1,5 +1,5 @@
 const path = require('path');
-console.log(__dirname)
+
 const config = {
     context: __dirname,
     entry: path.resolve(__dirname, "./src/index.js"),

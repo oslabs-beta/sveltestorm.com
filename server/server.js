@@ -4,9 +4,9 @@ const express = require('express');
 
 const DIST_PATH = path.join(__dirname, '../dist');
 const app = express();
+
 app.use(express.urlencoded({ extended: true }));
 
-console.log(DIST_PATH)
 app.use(express.static(__dirname + "./dist/bundle"));
 
 app.use('/', (req, res) => {
