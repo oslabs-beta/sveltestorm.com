@@ -133,5 +133,51 @@ text-decoration: none;
     transition: all 0.2s ease-in-out;
     background: #fff;
     color: #010606;
+    font-size: 16px;
 }
 `;
+
+export const Anchor = styled.a`
+/* margin: .25rem; */
+font-size: 2rem;
+/* border: 1px solid red; */
+width: 1.5em;
+height: 3em;
+display: flex;
+align-items: center;
+justify-content: center;
+
+&:hover{
+transition: all 0.2s ease-in-out;
+font-size: 2.5rem;
+}
+`
+export const Anchor2 = styled.a`
+/* margin: .25rem; */
+/* border: 1px solid red; */
+width: 3em;
+height: 6em;
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+&:hover{
+transition: all 0.2s ease-in-out;
+/* height: 2.5rem; */
+font-size: 2rem;
+max-width: 50px;
+max-height: 50px;
+}
+`
+export const Svelte = styled.img`
+height: 2rem;
+
+&:hover{
+transition: all 0.2s ease-in-out;
+margin: none;
+padding: none;
+height: 2.5rem;
+
+}
+`

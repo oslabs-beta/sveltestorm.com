@@ -1,6 +1,5 @@
 import React from 'react';
 import {AiFillGithub, AiFillLinkedin} from 'react-icons/ai';
-import { IoPersonCircleSharp } from 'react-icons/io5';
 import { IconContext } from "react-icons";
 import { TeamContainer, Header, GroupContainer, TeamWrapper, Img, LinkWrapper, Linkedin, Git, Name, Anchor } from './TeamElements';
 import Aye from '../../images/Contributers/Aye.png';
@@ -41,9 +40,9 @@ const Team = () => {
                                         <AiFillLinkedin/>
                                     </Anchor>
                                 </LinkWrapper>
-                      </TeamWrapper>
+                    </TeamWrapper>
             })    
-           }
+        }
             </GroupContainer>
         </TeamContainer>
     </IconContext.Provider>
