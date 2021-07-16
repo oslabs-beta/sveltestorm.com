@@ -11,10 +11,8 @@ import Download from '../components/Download/Download';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
-
     // toggle dropdown menu
     const toggleMenu = () => {
-        console.log("Drop down menu toggled");
         setIsOpen(!isOpen);
     };
 

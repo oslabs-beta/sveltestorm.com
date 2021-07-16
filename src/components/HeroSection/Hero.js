@@ -21,6 +21,7 @@ const onHover = () => {
                 </IconBg>
             </HeroBg>
             <HeroContent>
+                <HeroH1>SVELTE STORM</HeroH1>
                 <SSLogo src={SvelteStorm} alt="Svelte Storm" />
                 <HeroH1> SVELTE STORM </HeroH1>
                 <HeroP>
