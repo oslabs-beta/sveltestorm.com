@@ -43,7 +43,6 @@ const Download = () => {
             {/* <GifContainer >
                 <Overlay/>
             </GifContainer> */}
-
         </DownloadContainer>
     </IconContext.Provider>
     )
