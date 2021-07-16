@@ -53,11 +53,17 @@ position: relative;
 top: -150px;
 right: -100px;
 
+@media screen and (max-width: 1300px){
+    transition: all 0.2s ease-in-out;
+    font-size: 25rem;
+    top: -100px;
+    right: -50px;
+}
 
-
-
-/* border: 2px solid red; */
-z-index: 1;
+@media screen and (max-width: 680px){
+transition: all 0.2s ease-in-out;
+color:white;
+}
 `;
 
 export const HeroContent = styled.div`
@@ -68,6 +74,10 @@ padding: 8px 24px;
 display: flex;
 flex-direction: column;
 align-items: center;
+`;
+
+export const SSLogo = styled.img`
+height: 9em;
 `;
 
 export const HeroH1 = styled.h1`
@@ -85,11 +95,11 @@ text-align: center;
 `
 
 export const HeroP = styled.p `
-margin-top:24px;
+margin-top:15px;
 color: #48454d;
 font-size: 24px;
 text-align: center;
-max-width: 600px;
+max-width: 700px;
 
 @media screen and (max-width: 786px){
     font-size: 24px;

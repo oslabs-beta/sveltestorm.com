@@ -1,9 +1,11 @@
 /* eslint-disable react/jsx-no-undef */
 import React from 'react'
 import { FaBars } from 'react-icons/fa';
-import {AiFillGithub} from 'react-icons/ai';
+import {AiFillGithub, AiFillMediumCircle} from 'react-icons/ai';
 import { IconContext } from "react-icons";
+import { SiSvelte } from "react-icons/si";
 import SvelteStorm from "../../images/SvelteStormLogo/logo.svg";
+import SvelteLogo from "../../images/sveltelogo.svg";
 import { 
     Nav, 
     NavbarContainer, 
@@ -14,7 +16,10 @@ import {
     NavLinks,
     NavBtn,
     LogoContainer,
-    SSLogo
+    SSLogo,
+    Anchor,
+    Anchor2,
+    Svelte
 } from './NavbarElements';
 
 const Navbar = ({ toggleMenu }) => {
@@ -22,7 +27,7 @@ const Navbar = ({ toggleMenu }) => {
 
 
     return (
-        <IconContext.Provider value={{ color: "#ff3c00", size: '2.5rem' }}>
+        <IconContext.Provider value={{ color: "#ff3c00" }}>
         <>
         <Nav>
             <NavbarContainer>
@@ -48,9 +53,15 @@ const Navbar = ({ toggleMenu }) => {
                  </NavItem> */}
              </NavMenu>
              <NavBtn>
-                 <a href="https://github.com/oslabs-beta/sveltestorm.com" target="_blank" rel="noopener noreferrer">
+                 <Anchor href="https://github.com/oslabs-beta/sveltestorm.com" target="_blank" rel="noopener noreferrer">
                  <AiFillGithub/>
-                 </a>
+                 </Anchor>
+                 <Anchor href="https://arronnestor.medium.com/sveltestorm-sveltes-first-ide-83ad1f1a9803" target="_blank" rel="noopener noreferrer">
+                 <AiFillMediumCircle/>
+                 </Anchor>
+                 <Anchor2 href="https://svelte.dev/" target="_blank" rel="noopener noreferrer">
+                 <Svelte src={SvelteLogo} alt="Svelte" />
+                 </Anchor2>
              </NavBtn>
             </NavbarContainer>
         </Nav>
