@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import SvelteStorm from '../../images/SvelteStormLogo/logo.svg';
-import { HeroContainer, HeroBg, IconBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight} from './HeroElements';
+import { HeroContainer, HeroBg, IconBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight, SSLogo} from './HeroElements';
 import {Button} from '../ButtonElements';
 import { IconContext } from "react-icons";
-import { AiOutlineThunderbolt } from "react-icons/ai";
+import { AiOutlineThunderbolt} from "react-icons/ai";
 
 const Hero = () => {
 const [hover, setHover] = useState(false);
@@ -13,7 +13,7 @@ const onHover = () => {
 };
 
     return (
-        <IconContext.Provider value={{ border:"1px solid black"}}>
+        <IconContext.Provider value={{}}>
         <HeroContainer id='hero'>
             <HeroBg>
                 <IconBg>
@@ -22,8 +22,10 @@ const onHover = () => {
             </HeroBg>
             <HeroContent>
                 <HeroH1>SVELTE STORM</HeroH1>
+                <SSLogo src={SvelteStorm} alt="Svelte Storm" />
+                <HeroH1> SVELTE STORM </HeroH1>
                 <HeroP>
-                    Download the best IDE NOW!!!
+                    The first IDE for Svelte web application development.
                 </HeroP>
                 <HeroBtnWrapper>
                     <Button

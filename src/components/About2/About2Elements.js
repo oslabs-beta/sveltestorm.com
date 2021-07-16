@@ -6,58 +6,55 @@ min-height: 800px;
 display: flex;
 justify-content: space-evenly;
 align-items: center;
-border: solid black;
 
 @media screen and (max-width: 768px) {
 display: flex;
 flex-direction: column;
+justify-content:space-around;
 }
-`
+`;
+
 export const Img = styled.img`
-width: 40rem;
+width: 50%;
 margin-top: 5%;
 margin-left: 2%;
 margin-bottom:5%;
 
 @media screen and (max-width: 1000px) {
-  width: 30rem;
+  width: 40rem;
+  margin-bottom: 100px;
 }
-`
+`;
+
 export const DescriptionContainer = styled.div`
 display: flex;
-flex-direction: column;
-justify-content: center;
 align-items: center;
-border: solid red;
-
+min-width: 300px ;
 width: 40em;
 height: 30em;
 
 @media screen and (max-width: 768px) {
 height: 15em ;
 }
-
-`
+`;
 
 export const Header = styled.h1`
-color: #48454d;
-margin-bottom: 20px;
+text-align: center;
+color: #48454d;;
 
 @media screen and (max-width: 768px) {
 display: flex;
 justify-content: center;
 }
-`
+`;
 
 export const Description = styled.p`
 font-size: 16px;
-border: 1px solid red;
 width: 90%;
 
 @media screen and (max-width: 768px) {
-/* margin: 20px; */
 display: flex;
 justify-content: center;
 align-items: center;
 }
-`
+`;

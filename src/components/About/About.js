@@ -8,7 +8,7 @@ import { AboutContainer, Header, Description, FeaturesContainer, FeatWrapper, Fe
 
 const About = () => {
     return (
-        <IconContext.Provider value={{ color: "orange", size: '5em' }}>
+        <IconContext.Provider value={{ color: "rgb(255, 60, 0)", size: '8em' }}>
         <AboutContainer id='about' >
             <Header>
                 What is Svelte Storm?
@@ -41,7 +41,6 @@ const About = () => {
                     </FeatureDescription>
                 </FeatWrapper>
             </FeaturesContainer>
-            
         </AboutContainer>
         </IconContext.Provider>
     )
