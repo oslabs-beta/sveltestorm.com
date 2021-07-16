@@ -23,21 +23,21 @@ const Download = () => {
                 </Header>
             <DataContainer>
                     <IconWrapper>
-                        <Anchor href="https://github.com/oslabs-beta/sveltestorm.com" target="_blank" rel="noopener noreferrer">
+                        <Anchor href="https://github.com/oslabs-beta/SvelteStorm" target="_blank" rel="noopener noreferrer">
                             <DiLinux/>
                         </Anchor>
-                        <Anchor href="https://github.com/oslabs-beta/sveltestorm.com" target="_blank" rel="noopener noreferrer">
+                        <Anchor href="https://github.com/oslabs-beta/SvelteStorm" target="_blank" rel="noopener noreferrer">
                             <DiWindows/>
                         </Anchor>
-                        <Anchor href="https://github.com/oslabs-beta/sveltestorm.com" target="_blank" rel="noopener noreferrer">
+                        <Anchor href="https://github.com/oslabs-beta/SvelteStorm" target="_blank" rel="noopener noreferrer">
                             <DiApple/>
                         </Anchor>
                     </IconWrapper>
             </DataContainer>        
                 <Footer>
-                    <Copyright> 
+                    {/* <Copyright> 
                         ©Copyright. All rights reserved.
-                    </Copyright>
+                    </Copyright> */}
                 </Footer>
             </Wrapper>
             {/* <GifContainer >

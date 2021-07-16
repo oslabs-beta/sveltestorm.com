@@ -14,11 +14,11 @@ const About = () => {
                 What is Svelte Storm?
             </Header>
             <Description>
-             Svelte is an open-source IDE with a built-in State Manager window for viewing your project in real-time, SvelteStorm will aid
+             Svelte Storm is an open-source IDE with a built-in State Manager window for viewing your project in real-time. Svelte Storm will aid
              the rapidly growing Svelte community. With additional features like file directory access and a built-in terminal, its 
-             introduction to this community will soon prove invaluable. SvelteStorm was built using Svelte and Electron and is
+             introduction to this community will soon prove invaluable. Svelte Storm was built using Svelte and Electron and is
              downloadable for Windows, Linux, and Mac operating systems. We are hoping to provide a foundation to incorporate the
-             tooling and backing that Svelte deserves. In providing this platform, we hope the community feels supported in their
+             tooling and community that Svelte deserves. In providing this platform, we hope the community feels supported in their
              navigation of this framework as it continues to grow.
             </Description>
             <FeaturesContainer>
