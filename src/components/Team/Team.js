@@ -13,7 +13,7 @@ const Team = () => {
     const contributers = [
         {name:'Aye Moe', git: 'https://github.com/ayemmoe', linkedin: 'https://www.linkedin.com/in/ayemmoe/', src: Aye}, 
         {name:'Arron Nestor',git: 'https://github.com/NesTar6', linkedin: 'https://www.linkedin.com/in/arron-nestor/', src: Arron},
-        {name:'Sam Filip',git: 'http://github.com/samfilip', linkedin: 'linkedin.com/in/sam-filip', src:Sam},
+        {name:'Sam Filip',git: 'https://github.com/samfilip', linkedin: 'https://www.linkedin.com/in/sam-filip', src:Sam},
         {name:'Frank Stepanski',git: 'https://github.com/frankstepanski', linkedin: 'https://www.linkedin.com/in/frankstepanski/', src: Frank},
         {name:'Kevin Sarchi',git: 'https://github.com/Svrchi', linkedin: 'https://www.linkedin.com/in/kevin-sarchi', src: Kevin}
     ];
