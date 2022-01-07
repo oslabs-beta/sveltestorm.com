@@ -53,7 +53,7 @@ const Navbar = ({ toggleMenu }) => {
                  </NavItem> */}
              </NavMenu>
              <NavBtn>
-                 <Anchor href="https://github.com/oslabs-beta/sveltestorm" target="_blank" rel="noopener noreferrer">
+                 <Anchor href="https://github.com/oslabs-beta/SvelteStorm" target="_blank" rel="noopener noreferrer">
                  <AiFillGithub/>
                  </Anchor>
                  <Anchor href="https://arronnestor.medium.com/sveltestorm-sveltes-first-ide-83ad1f1a9803" target="_blank" rel="noopener noreferrer">
