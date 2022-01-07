@@ -33,7 +33,7 @@ const Navbar = ({ toggleMenu }) => {
             <NavbarContainer>
                 <LogoContainer>
                 <SSLogo src={SvelteStorm} />
-             <NavLogo to='hero' spy={true} smooth={true} offset={-80} duration={500}> Svelte Storm</NavLogo>
+             <NavLogo to='hero' spy={true} smooth={true} offset={-80} duration={500}>Svelte Storm</NavLogo>
              </LogoContainer>
              <MobileIcon onClick={toggleMenu}>
                  <FaBars />

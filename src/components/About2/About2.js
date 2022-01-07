@@ -7,7 +7,7 @@ const About2 = () => {
         <About2Container >
             <DescriptionContainer>
                 <Header>
-                Intuitive and familiar UI allows users to hit the ground running 
+                Intuitive and familiar UI allows users to hit the ground running.
                 </Header>
                 {/* <Description>
                 Lorem ipsum dolor sit amet, consectetur 

@@ -35,15 +35,14 @@ const Download = () => {
                     </IconWrapper>
             </DataContainer>        
                 <Footer>
-                    <Copyright> 
+                    {/* <Copyright> 
                         ©Copyright. All rights reserved.
-                    </Copyright>
+                    </Copyright> */}
                 </Footer>
             </Wrapper>
             {/* <GifContainer >
                 <Overlay/>
             </GifContainer> */}
-
         </DownloadContainer>
     </IconContext.Provider>
     )
